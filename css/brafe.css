@@ -15,12 +15,62 @@ body{
 
 
 .container{
+    
     display: flex;
-    max-width: 90px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .menu{
     background-color: #252525;
     padding: 15px 0;
+}
+
+.menu-nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.25em;
+}
+.menu-nav {
+    flex: 1;
+    margin: 0 10px;
+    align-self: center;
+}
+.menu-logo{
+    margin: 0 10px;
+}
+.menu-nav ul{
+    float: right;
+    display: flex;
+    list-style: none;
+}
+
+.menu-nav ul li a{
+    padding: 10px;
+}
+/* BANNER */
+
+.intro{
+    background-image: url(../img/bg-intro.jpg);
+    padding: 150px 0;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+.intro h1{
+    text-transform: uppercase;
+    font-size: 3em;
+
+}
+.intro p{
+    font-style: italic;
+    font-size: 1.125em;
+}
+.intro h1::after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 4px;
+    background-color: #fff;
+    margin: 10px auto;
 }
