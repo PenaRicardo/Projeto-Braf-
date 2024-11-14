@@ -1,25 +1,26 @@
-/* Reset */
-body, h1, h2, h3, p, ul {
+/* RESET */
+
+body, h1, h2, h3, p, ul{
     padding: 0;
     margin: 0;
 }
-
 body{
     font-family: Georgia, serif;
     color: #252525;
 }
 
-* {
+*{
     box-sizing: border-box;
 }
 
-
 .container{
-    
     display: flex;
-    max-width: 900px;
+    max-width: 960px;
     margin: 0 auto;
+    
 }
+
+/* MENU */
 
 .menu{
     background-color: #252525;
@@ -29,102 +30,109 @@ body{
 .menu-nav a{
     text-decoration: none;
     color: #fff;
-    font-size: 1.25em;
+    font-size: 1.125em;
 }
-.menu-nav {
-    flex: 1;
+
+.menu-nav{
+    flex:1;
     margin: 0 10px;
     align-self: center;
 }
+
 .menu-logo{
     margin: 0 10px;
 }
-.menu-nav ul{
+
+.menu nav ul{
     float: right;
     display: flex;
     list-style: none;
+    
 }
 
 .menu-nav ul li a{
     padding: 10px;
 }
-/* BANNER */
 
+/* Banner */
 .intro{
     background-image: url(../img/bg-intro.jpg);
-    padding: 150px 0;
     background-size: cover;
+    padding: 150px 0;
     color: #fff;
     text-align: center;
 }
-.intro h1{
+.intro h2{
     text-transform: uppercase;
     font-size: 3em;
-
 }
+
 .intro p{
     font-style: italic;
-    font-size: 1.125em;
+    font-size:1.125em;
 }
-.intro h1::after{
+
+.intro h2::after{
     content: '';
     display: block;
     width: 20px;
     height: 4px;
     background-color: #fff;
     margin: 10px auto;
-<<<<<<< HEAD
 }
-/*SOBRE*/
 
-.sobre {
+/* Sobre */
+.sobre{
     padding: 60px 0;
 }
+
 .sobre h2{
-    font-size: 2,25em;
+    font-size: 2.25em;
     text-align: center;
     margin-bottom: 60px;
 }
+
 .sobre-item{
     flex: 1;
     margin: 0 10px;
 }
-.sobre > p {
-    font-size: 1,125em;
+
+.sobre-item img{
+    display: block;
+    max-width: 100%;
+}
+.sobre-item h3{
+    font-size: 2.25em;
+    background-color: #252525;
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+    width: 220px;
+    padding: 5px 0 10px 0;
+    line-height: 1em;
+    font-weight: normal;
+    position: relative;
+    top:-25px;
+}
+.sobre > p{
+    font-size: 1.125em;
     line-height: 1.4em;
     font-style: italic;
     margin: 20px auto;
     max-width: 460px;
     text-align: center;
 }
-.sobre-item img{
-    display: block;
-    max-width: 100%;
-}
-.sobre-item h3{
-    font-size: 2,25em;
-    line-height: 1em;
-    background-color: #252525;
-    color: #fff;
-    font-style: italic;
-    font-weight: normal;
-    text-align: center;
-    position: relative;
-    width: 220px;
-    top: -25px;
-    padding: 5px 0 10px 0;
-=======
->>>>>>> 7ee3e670dd1e6205c410d98f285526aaccab50a3
-}
-.produtos {
-    background-color: #e7e4db;
-    padding: 60px 0;
+
+/* Produtos */
+.produtos{
+    background-color:#e7e4e8;
     border-top: 3px solid #d6d3c8;
     border-bottom: 3px solid #d6d3c8;
+    padding: 60px 0;
 }
 
 .produtos-item{
-    flex: 1;
+    flex:1;
     margin: 0 10px 40px 10px;
 }
 
@@ -134,33 +142,31 @@ body{
     margin-bottom: 20px;
 }
 
-.produtos-item p{
-    font-size: o.875em;
-    line-height: 1.4em;
-}
-
-.produtos-item h2::before {
-    content: '';
+.produtos-item h2::before{
+    content:'';
     display: block;
     width: 100px;
     height: 100px;
-    background-color: currentColor;
     border-radius: 50%;
-    border: 5px solid #e7e4db;
+    background-color: currentColor;
+    border: 5px solid #e7e4e8;
     box-shadow: 0 0 0 5px currentColor;
     margin: 20px auto;
 }
 
 h2.produtos-paulista::before{
-    color: #492901
+    color: #492901;
 }
-
 h2.produtos-carioca::before{
-    color: #c17139
+    color: #c17139;
+}
+h2.produtos-mineiro::before{
+    color: #d7a54d;
 }
 
-h2.produtos-mineiro::before{
-    color: #d7a54d
+.produtos-item p{
+    font-size: 0.875em;
+    line-height: 1.4em;
 }
 
 .produtos-btn{
@@ -176,4 +182,44 @@ h2.produtos-mineiro::before{
     padding: 15px 0;
     margin: 20px auto;
 }
-/* teste */
+
+/* Localidades */
+
+.locais{
+    padding: 60px 0;
+}
+
+.locais-item{
+    margin-bottom: 40px;
+}
+.locais-img, .locais-info{
+    flex:1;
+    margin: 0 10px;
+}
+
+.locais-img img{
+    display: block;
+    max-width: 100%;
+}
+
+.locais-item h2{
+    font-size: 2.25em;
+    margin-bottom: 20px;
+}
+.locais-item p{
+    font-size: 1.125em;
+    line-height: 1.4em;
+    max-width: 320px;
+    margin-bottom: 40px;
+}
+.locais-item a{
+    font-size: 1.125em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 3px solid;
+    color: #252525;
+    padding: 10px 20px;
+}
+
+
+
