@@ -275,16 +275,16 @@ h2.produtos-mineiro::before{
 /* Footer */
 .footer{
     background-color: #d6d3c8;
-    padding: 40px;
+    padding: 40px 0;
 }
 
 .footer-img{
     margin: 0 10px;
-    flex: 1;
 }
 .footer p{
     font-size: 1.125em;
     line-height: 1.4em;
+    flex: 1;
 }
 
 
